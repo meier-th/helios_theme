@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 6.2.0//EN" "http://www.liferay.com/dtd/liferay-look-and-feel_6_2_0.dtd">
+
+<look-and-feel>
+    <compatibility>
+        <version>7.1.0+</version>
+    </compatibility>
+    <theme id="helios" name="Helios">
+        <template-extension>ftl</template-extension>
+        <settings>
+            <setting configurable="true" type="checkbox" key="dashboard-view-for-logged-in-users" value="false" />
+            <setting configurable="true" type="text" key="site-subheading" value="A New Theme." />
+            <setting configurable="true" type="text" key="site-header-icon" value="icon-camera-retro" />
+            <setting configurable="true" type="text" key="theme-color-main" value="#D9AF79">
+                <![CDATA[
+                    AUI().ready(
+                        'aui-color-picker-popover',
+                        function(A) {
+                            var colorPicker = new A.ColorPickerPopover({
+                            trigger: "#[@NAMESPACE@]theme-color-main",
+                            zIndex: 2
+                            }).render();
+
+                            colorPicker.on('select', function(event) {
+                                var color = event.color;
+
+                                event.trigger.set('value', color);
+
+                                /* http://stackoverflow.com/questions/5560248 */
+                                var percent = -35;
+                                var num = parseInt(color.slice(1),16), amt = Math.round(2.55 * percent), R = (num >> 16) + amt, G = (num >> 8 & 0x00FF) + amt, B = (num & 0x0000FF) + amt;
+                                var highlightColor = '#' + (0x1000000 + (R<255?R<1?0:R:255)*0x10000 + (G<255?G<1?0:G:255)*0x100 + (B<255?B<1?0:B:255)).toString(16).slice(1);
+
+                                A.one("#[@NAMESPACE@]theme-color-highlight").set('value', highlightColor);
+                            });
+                        }
+                    );
+                ]]>
+            </setting>
+            <setting  configurable="true" type="text" key="theme-color-highlight" value="#A6691A">
+                <![CDATA[
+                    AUI().ready(
+                        'aui-color-picker-popover',
+                        function(A) {
+                            var colorPicker = new A.ColorPickerPopover({
+                            trigger: "#[@NAMESPACE@]theme-color-highlight",
+                            zIndex: 2
+                            }).render();
+
+                            colorPicker.on('select', function(event) {
+                                event.trigger.set('value', event.color);
+                            });
+                        }
+                    );
+                ]]>
+            </setting>
+            <setting configurable="true" type="checkbox" key="portlet-setup-show-borders-default" value="true" />
+            <setting configurable="true" type="checkbox" key="hide-dockbar" value="false" />
+        </settings>
+        <color-scheme id="01" name="Default">
+            <css-class>default</css-class>
+        </color-scheme>
+        <color-scheme id="02" name="Dashboard">
+            <css-class>dashboard</css-class>
+        </color-scheme>
+    </theme>
+</look-and-feel>
