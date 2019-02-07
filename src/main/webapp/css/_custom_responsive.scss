@@ -1,0 +1,109 @@
+$colorBackgroundHelperButtons: #3A3A3A;
+
+@include media-breakpoint-down(md) {
+    .aui {
+        * {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        #navigation {
+            &.open {
+                .navbar-collapse {
+                    height: auto;
+                    overflow: visible;
+                }
+            }
+
+            .navbar-nav {
+                > li {
+                    &.nav-item-sitenavigationtoggle {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .portlet-dockbar {
+            .navfbar-btn {
+                padding: 3px 8px;
+            }
+        }
+    }
+
+    .aui .color-scheme-default {
+        #navigation {			
+            .navbar-inner {
+                > .navbar-collapse {
+                    background: $colorBackgroundHelperButtons;
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 111px;
+                    z-index: 1050;
+
+                    > .navbar-nav {
+                        padding: 10px;
+
+                        > li {
+                            margin: 2px 10px;
+                            padding: 6px 0;
+                            border-width: 1px 0 0 0;
+
+                            > a {
+                                padding: 10px 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .aui .color-scheme-dashboard {
+        #content {
+            margin-left: 0;
+        }
+
+        #banner {
+            box-shadow: 0 1px 4px 1px #888;
+            @include transition(all 0.3s ease-in-out);
+
+            &.toggler-content-collapsed {
+                left: -230px;
+            }
+        }
+
+        #subbanner {
+            .nav-banner-toggle {
+                display: block;
+                margin: 2px;
+                position: fixed;
+                right: 0;
+                top: 0;
+                z-index: 1060;
+
+                > a {
+                    padding: 7px 10px;
+                    vertical-align: top;
+                    margin: 0;
+                }
+            }
+        }
+
+        .portlet-dockbar {
+            .dockbar {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .aui .color-scheme-default {
+        #banner {
+            .site-title {
+                font-size: 24px;
+            }
+        }
+    }
+}

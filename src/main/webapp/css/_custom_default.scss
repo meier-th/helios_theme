@@ -1,0 +1,77 @@
+$colorBackground: #F5F5F5;
+
+.aui .default {
+    padding: 0;
+    background: $colorBackground;
+
+    #header-wrapper {
+        background-image: url(../images/bg_t.png);
+        height: 367px;
+        position: relative;
+    }
+
+    #wrapper {
+        margin-top: -256px;
+    }
+
+    #wrapper, #banner {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 1120px;
+        min-width: 320px;
+    }
+
+    #banner {
+        height: 111px;
+        display: block;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            margin-right: -0.25em;
+        }
+
+        #heading {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    #main-content > .row,
+    #content .breadcrumb {
+        background: #FFF;
+        margin-bottom: 18px;
+        box-shadow: 0 0 3px #999;
+        @include border-radius(4px);
+    }
+
+    #main-content {
+        .portlet-column {
+            border-left: 1px solid #EEEEEE;
+            margin-bottom: 12px;
+            margin-top: 12px;
+            min-height: 220px;
+        }
+
+        .portlet-column-first {
+            border: none;
+        }
+
+        .portlet-borderless {
+            padding: 12px;
+        }
+    }
+
+    #navigation {
+        margin-top: 2.65em;
+        float: right;
+
+        .navbar-inner {
+            > .navbar-collapse, .nav-helpers {
+                float: right;
+            }
+        }
+    }
+}
