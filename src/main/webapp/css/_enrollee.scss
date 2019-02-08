@@ -1,0 +1,104 @@
+.aui {
+    .course-description {
+        border: 1px solid #dadada;
+        margin-top: -1px;
+        background-color: #fff;
+        cursor: pointer;
+
+        .course-name {
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #dadada;
+            display: block;
+            margin: 0 0 -1px;
+            padding: 0.5% 1%;
+
+            a {
+                text-decoration: underline;
+                text-decoration-style: dotted;
+                
+                &:hover {
+                    text-decoration: underline;
+                    text-decoration-style: dotted;
+                }
+            }
+        }
+
+        .teacher {
+            width: 5%;
+            padding: 1%;
+            text-align: center;
+            min-width: 150px;
+            vertical-align: top;
+            
+            .teacher-name {
+                font-weight: bold;
+            }
+            
+            .teacher-photo {
+                position: relative;
+                width: 100%;
+                
+                div {
+                    position: absolute;
+                    background-size: 100% 100%;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    @include border-radius(50%);
+                }
+
+                &:before {
+                    content: "";
+                    display: block;
+                    padding-top: 100%;
+                }
+            }
+        }
+
+        .details {
+            width: 100%;
+            padding: 1%;
+            vertical-align: top;
+            
+            .target {
+                margin-bottom: 5px;
+            }
+            
+            .description {
+                margin-bottom: 5px;
+            }
+            
+            .technologies {
+                margin-bottom: 5px;
+
+                .tech-item {
+                    padding-left: 18px;
+                    padding-right: 8px;
+                    background-image: url("../images/common/tag.png");
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        
+        > div.course-details {
+            transition: opacity 1s ease-out;
+            opacity: 0; 
+            height: 0;
+            overflow: hidden;
+        }
+        
+        &:hover {
+            background-color: #f1f1f1;
+
+            .course-name {
+                background-color: #ddd;
+            }
+
+            > div.course-details {
+                opacity: 1;
+                height: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+/* ---------- Column widths ---------- */
+
+.portlet-column-content.empty {
+    padding: 50px;
+}
+
+/* ---------- Wrapper ---------- */
+
+#wrapper {
+    padding: 2em 5em 0;
+
+    @include media-breakpoint-down(sm) {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    @include media-breakpoint-only(md) {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
