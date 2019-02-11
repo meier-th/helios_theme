@@ -1,4 +1,5 @@
-@import "font_awesome";
+@import "aui/alloy-font-awesome/scss/variables";
+
 /* ---------- Dragging/sorting indicators ---------- */
 
 .portlet-layout.dragging {
@@ -14,7 +15,7 @@
 }
 
 .portlet-boundary.yui3-dd-dragging {
-    opacity: 0.6;
+    @include opacity(0.6);
 
     .portlet {
         border: 2px dashed #CCC;
@@ -22,7 +23,7 @@
 }
 
 .sortable-layout-proxy {
-    opacity: 1;
+    @include opacity(1);
 
     .portlet-topper {
         background-image: none;
@@ -32,7 +33,7 @@
 .proxy {
     cursor: move;
 
-    opacity: 0.65;
+    @include opacity(0.65);
 
     position: absolute;
 
@@ -386,7 +387,7 @@
 /* ---------- Tree view ---------- */
 
 .tree-node {
-    .glyphicon-check .glyphicon {
+    .icon-check {
         padding-right: 2px;
 
         &:before {
@@ -395,7 +396,7 @@
     }
 
     .tree-node-checked {
-        .glyphicon-check .glyphicon {
+        .icon-check {
             padding-right: 0;
 
             &:before {
@@ -466,7 +467,7 @@
     font-size: 1.5em;
     margin: 1em;
 
-    opacity: 0.9;
+    @include opacity(0.9);
 
     padding: 1em;
     position: absolute;

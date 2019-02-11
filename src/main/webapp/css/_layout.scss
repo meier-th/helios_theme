@@ -1,3 +1,5 @@
+@import "mixins";
+
 /* ---------- Column widths ---------- */
 
 .portlet-column-content.empty {
@@ -9,12 +11,12 @@
 #wrapper {
     padding: 2em 5em 0;
 
-    @include media-breakpoint-down(sm) {
+    @include respond-to(phone) {
         padding-left: 0.5em;
         padding-right: 0.5em;
     }
 
-    @include media-breakpoint-only(md) {
+    @include respond-to(tablet) {
         padding-left: 2em;
         padding-right: 2em;
     }

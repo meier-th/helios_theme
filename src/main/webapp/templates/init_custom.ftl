@@ -2,6 +2,7 @@
 <#assign site_header_icon = themeDisplay.getThemeSetting("site-header-icon")>
 <#assign theme_color_main = themeDisplay.getThemeSetting("theme-color-main")>
 <#assign theme_color_highlight = themeDisplay.getThemeSetting("theme-color-highlight")>
+<#assign site_logo = "${images_folder}/company_logo.png">
 
 <#if !getterUtil.getBoolean(themeDisplay.getThemeSetting("portlet-setup-show-borders-default"))>
 	<#assign css_class = "${css_class} borderless-default">

@@ -1,16 +1,17 @@
 @import "mixins";
-@import "custom_default";
-@import "custom_dashboard";
-@import "custom_responsive";
-@import "custom_extras";
-@import "custom_primefaces";
+
+@import url(custom_default.css);
+@import url(custom_dashboard.css);
+@import url(custom_responsive.css);
+@import url(custom_extras.css);
+@import url(custom_primefaces.css);
 
 $colorBackgroundBody: #F9F9F9;
 $colorHeading: #5E60B2;
 $colorHighlightWarn: #953537;
 $colorHighlightInfo: #5CB260;
 
-/* --- Base styles --- */
+/* ---------- Base styles ---------- */
 
 .aui {
     height: 100%;
@@ -85,7 +86,7 @@ $colorHighlightInfo: #5CB260;
             background: none;
             border: none;
             padding: 0;
-            @include box-shadow(none);
+            box-shadow: none;
         }
 
         .nav {
@@ -114,7 +115,7 @@ $colorHighlightInfo: #5CB260;
                     padding: 8px 12px;
                     margin: 0;
                     text-shadow: none;
-                    @include border-radius(0);
+                    border-radius: 0;
 
                     &:hover {
                         color: #888;
@@ -135,7 +136,7 @@ $colorHighlightInfo: #5CB260;
                 border-width: 0;
                 margin: 0;
                 left: 6px;
-                @include border-radius(0);
+                border-radius: 0;
 
                 &:after, &:before {
                     border-width: 0;
@@ -212,7 +213,7 @@ $colorHighlightInfo: #5CB260;
     .portlet-dockbar {
         .navbar-inner {
             background: #FFFFFF;
-            @include box-shadow(none);
+            box-shadow: none;
         }
 
         .sign-out {

@@ -1,6 +1,8 @@
+@import "mixins";
+
 $colorBackgroundHelperButtons: #3A3A3A;
 
-@include media-breakpoint-down(md) {
+@include respond-to(phone, tablet) {
     .aui {
         * {
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -8,13 +10,13 @@ $colorBackgroundHelperButtons: #3A3A3A;
 
         #navigation {
             &.open {
-                .navbar-collapse {
+                .nav-collapse {
                     height: auto;
                     overflow: visible;
                 }
             }
 
-            .navbar-nav {
+            .nav {
                 > li {
                     &.nav-item-sitenavigationtoggle {
                         display: block;
@@ -24,7 +26,7 @@ $colorBackgroundHelperButtons: #3A3A3A;
         }
 
         .portlet-dockbar {
-            .navfbar-btn {
+            .btn-navbar {
                 padding: 3px 8px;
             }
         }
@@ -33,7 +35,7 @@ $colorBackgroundHelperButtons: #3A3A3A;
     .aui .color-scheme-default {
         #navigation {			
             .navbar-inner {
-                > .navbar-collapse {
+                > .nav-collapse {
                     background: $colorBackgroundHelperButtons;
                     left: 0;
                     position: absolute;
@@ -41,7 +43,7 @@ $colorBackgroundHelperButtons: #3A3A3A;
                     top: 111px;
                     z-index: 1050;
 
-                    > .navbar-nav {
+                    > .nav {
                         padding: 10px;
 
                         > li {
@@ -65,8 +67,8 @@ $colorBackgroundHelperButtons: #3A3A3A;
         }
 
         #banner {
-            box-shadow: 0 1px 4px 1px #888;
-            @include transition(all 0.3s ease-in-out);
+            @include box-shadow(0 1px 4px 1px #888);
+            @include single-transition(left 0.3s ease);
 
             &.toggler-content-collapsed {
                 left: -230px;
@@ -98,7 +100,7 @@ $colorBackgroundHelperButtons: #3A3A3A;
     }
 }
 
-@include media-breakpoint-down(sm) {
+@include respond-to(phone) {
     .aui .color-scheme-default {
         #banner {
             .site-title {

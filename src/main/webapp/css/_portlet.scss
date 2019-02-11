@@ -1,3 +1,4 @@
+
 /* ---------- Portlet wrapper and icons ---------- */
 
 .freeform .portlet {
@@ -147,27 +148,7 @@ body.portlet {
             background: url() no-repeat 0 50%;
             display: inline-block;
             margin-left: 5px;
-            vertical-align: top;/* ---------- Column widths ---------- */
-
-.portlet-column-content.empty {
-    padding: 50px;
-}
-
-/* ---------- Wrapper ---------- */
-
-#wrapper {
-    padding: 2em 5em 0;
-
-    @include media-breakpoint-down(sm) {
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-    }
-
-    @include media-breakpoint-only(md) {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-}
+            vertical-align: top;
 
             &:hover {
                 text-decoration: none;
@@ -660,7 +641,7 @@ body.portlet {
                 border-bottom: none;
                 border-left: none;
                 display: block;
-                height: 20px;
+                height: 15px;
                 padding: 5px 0;
 
                 &:hover {
@@ -715,7 +696,7 @@ body.portlet {
     }
 
     .portlet-borderless-container:hover .portlet-borderless-bar, .portlet-journal-content .lfr-icon-actions:hover {
-        opacity: 1;
+         opacity: 1;
     }
 
     .taglib-calendar tr td.first a {

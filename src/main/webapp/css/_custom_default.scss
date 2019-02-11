@@ -1,3 +1,5 @@
+@import "mixins";
+
 $colorBackground: #F5F5F5;
 
 .aui .default {
@@ -17,8 +19,8 @@ $colorBackground: #F5F5F5;
     #wrapper, #banner {
         padding-left: 20px;
         padding-right: 20px;
-        max-width: 1120px;
-        min-width: 320px;
+        max-width: 1080px;
+        min-width: 280px;
     }
 
     #banner {
@@ -39,11 +41,11 @@ $colorBackground: #F5F5F5;
         }
     }
 
-    #main-content > .row,
+    #main-content > .row-fluid,
     #content .breadcrumb {
         background: #FFF;
         margin-bottom: 18px;
-        box-shadow: 0 0 3px #999;
+        @include box-shadow(0 0 3px #999);
         @include border-radius(4px);
     }
 
@@ -69,9 +71,13 @@ $colorBackground: #F5F5F5;
         float: right;
 
         .navbar-inner {
-            > .navbar-collapse, .nav-helpers {
+            > .nav-collapse, .nav-helpers {
                 float: right;
             }
         }
+    }
+
+    #content {
+        min-height: 70%;
     }
 }

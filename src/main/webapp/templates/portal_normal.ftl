@@ -10,7 +10,7 @@
 	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
 
 	<#include "${full_templates_path}/init_css.ftl">
-
+	
 	<@liferay_util["include"] page=top_head_include />
 </head>
 
@@ -40,7 +40,7 @@
 
 <div class="container-fluid" id="wrapper">
 	<div id="subbanner">
-		<span>site_subheading</span>
+		<span>${site_subheading}</span>
 	</div>
 
 	<section id="content">
