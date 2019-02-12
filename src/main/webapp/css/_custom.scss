@@ -1,236 +1,29 @@
-@import "mixins";
-
-@import url(custom_default.css);
-@import url(custom_dashboard.css);
-@import url(custom_responsive.css);
-@import url(custom_extras.css);
-@import url(custom_primefaces.css);
-
-$colorBackgroundBody: #F9F9F9;
-$colorHeading: #5E60B2;
-$colorHighlightWarn: #953537;
-$colorHighlightInfo: #5CB260;
-
-/* ---------- Base styles ---------- */
-
-.aui {
-    height: 100%;
-
-    .portal-normal {
-        min-height: 100%;
-        background: $colorBackgroundBody;
-        font-family: Helvetica,Arial,sans-serif;
-        font-weight: 400;
-
-        a {
-            color: #1946ba;
-        }
-    }
-
-    h2 {
-        font-size: 2.2em;
-    }
-
-    #wrapper {
-        height: 100%;
-        padding: 0;
-        margin: auto;
-        position: relative;
-    }
-
-    #banner {
-        margin: auto;
-
-        .site-title {
-            margin: 0;
-            font-weight: 300;
-            font-size: 34px;
-
-            > a:hover, > a:focus {
-                text-decoration: none;
-            }
-
-            .logo > span {
-                vertical-align: middle;
-            }
-
-            .site-name {
-                color: #CCCCCC;
-                font-size: 1.5em;
-                margin-left: -0.1em;
-            }
-
-            .site-header-icon {
-                text-shadow: 0 1px 0 #BBB;
-            }
-        }
-    }
-
-    #subbanner {
-        font-size: 38px;
-        font-weight: 300;
-        line-height: 1.6em;
-        margin-top: 5px;
-        text-align: center;
-        vertical-align: middle;
-        text-shadow: 0 0 3px #bbb;
-        color: #1946ba;
-
-        .nav-banner-toggle {
-            display: none;
-        }
-    }
-
-    #navigation {
-        .navbar-inner {
-            background: none;
-            border: none;
-            padding: 0;
-            box-shadow: none;
-        }
-
-        .nav {
-            margin: 0;
-
-            > li {
-                border: 1px solid #888;
-                border-width: 0 0 0 1px;
-                margin: 0;
-                padding: 0 6px;
-
-                &:first-child {
-                    border-width: 0 !important;
-
-                    &.lfr-nav-item a:before {
-                        content: "\f015";
-                        font-family: 'fontawesome-alloy';
-                    }
-                }
-
-                > a {
-                    background: none;
-                    color: #BBB;
-                    font-weight: 300;
-                    text-transform: uppercase;
-                    padding: 8px 12px;
-                    margin: 0;
-                    text-shadow: none;
-                    border-radius: 0;
-
-                    &:hover {
-                        color: #888;
-                        background-color: #EEE;
-                    }
-                }
-            }
-
-            .active {
-                > a {
-                    color: #EEE;
-                    box-shadow: none;
-                }
-            }
-
-            .dropdown-menu {
-                background-color: #EEE;
-                border-width: 0;
-                margin: 0;
-                left: 6px;
-                border-radius: 0;
-
-                &:after, &:before {
-                    border-width: 0;
-                }
-
-                a {
-                    &:hover {
-                        background: #DDD;
-                        color: #333;
-                    }
-                }
-            }
-
-            .nav-item-navtoggle,
-            .nav-item-sitenavigationtoggle {
-                display: none;
-            }
-        }
-
-        #sign-in, #sign-out {
-            color: lighten($colorHighlightInfo, 10%);
-
-            &:after {
-                content: "\f090";
-                font-family: 'fontawesome-alloy';
-                margin-left: 6px;
-            }
-
-            &:hover {
-                background-color: $colorHighlightInfo;
-                color: #EEEEEE;
-            }
-        }
-
-        #sign-out {
-            color: #f41c52;
-
-            &:after {
-                content: "\f08b";
-            }
-
-            &:hover {
-                background-color: #f41c52;
-                color: #fff;
-            }
-        }
-    }
-
-    #footer {
-        text-align: right;
-        padding: 0 20px;
-    }
-
-    .portlet {
-        .portlet-topper {
-            padding-left: 10px;
-
-            .portlet-topper-toolbar {
-                right: 7px;
-
-                .caret {
-                    display: none;
-                }
-            }
-
-            h1 {
-                color: #555;
-                font-size: 15px;
-                margin: 0;
-            }
-        }
-    }
-
-    .portlet-dockbar {
-        .navbar-inner {
-            background: #FFFFFF;
-            box-shadow: none;
-        }
-
-        .sign-out {
-            display: none;
-        }
-
-        .dockbar-user-notifications {
-            padding: 8px;
-
-            .user-notifications-count {
-                margin: 0;
-                color: #BBBBBB;
-            }
-        }
-    }
-    
-    .document-info {
-        background: #ececed;
-    }
+#header-wrapper {
+	height: 100%;
+	background-color: #656363;
+	position: fixed;
+	width: 25%;
+	/* display: inline; */
+	float: left;
+	#banner {
+		height: 100%;
+		#heading {
+			height: 25%;
+		}
+	}
 }
+img {
+	width: 80%;
+	margin: auto;
+}
+#content {
+	width: 75%;
+	/* display: inline; */
+	float: right;
+}
+#breadcrumbs {
+	width: 100%;
+	height: 40px;
+	position: fixed;
+}
+

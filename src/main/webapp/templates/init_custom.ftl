@@ -1,4 +1,3 @@
-<#assign site_subheading = themeDisplay.getThemeSetting("site-subheading")>
 <#assign site_header_icon = themeDisplay.getThemeSetting("site-header-icon")>
 <#assign theme_color_main = themeDisplay.getThemeSetting("theme-color-main")>
 <#assign theme_color_highlight = themeDisplay.getThemeSetting("theme-color-highlight")>
