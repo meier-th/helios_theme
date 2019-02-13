@@ -30,7 +30,7 @@ $menu-light-background-colour: #585858;
 }
 
 #ControlMenu {
-	position: fixed;
+	/* position: fixed; */
 	display: block;
 }
 
@@ -39,10 +39,8 @@ img {
 	margin: auto;
 }
 #content {
-	/* width: 75%; */
 	margin-left: 220px;
 	margin-top: 40px;
-	/* display: inline; */
 	float: left;
 }
 

@@ -1,18 +1,21 @@
 $nav_item_background: #fc1c53;
 $nav_item_text_color: #d3d3d3;
 $nav_item_text_active_color: #f8f8f8;
+$green_for_sign_in: #25C32A;
+$nav_child_hover: #F65D81;
 
 #navigation {
 	height: 295px;
 	.navbar-inner {
 		height: 100%;
+		margin-top: 4px;
 		.collapse {
 			display: block;
 		}
 	}
 	ul {
-	padding-inline-start: 0px;
-}
+		padding-inline-start: 0px;
+	}
 li {
 	height: 46px;
 	width: 200px;
@@ -37,5 +40,56 @@ li {
 		 background-color: $nav_item_background;
 		 text-decoration: none;
 	}
+	.active {
+		color: white;
+	}
 }
+}
+.selected {
+	color: white !important;
+}
+.last_element_in_list {
+	border: none !important;
+	text-transform: uppercase;
+	#sign-in {
+		color: $green_for_sign_in;
+		padding-left: 30px;
+	}
+	#sign-in:hover {
+		background-color: $green_for_sign_in;
+	}
+	#sign-out {
+		padding-left: 30px;
+		color: $nav_item_background;
+	}
+}
+.child-element {
+	color:white !important;
+}
+.dropdown:hover {
+	margin-bottom: 300px;
+}
+.dropdown-menu {
+	width: 250px;
+	background-color: $nav_item_background;
+	margin-top: 0;
+	overflow-x: visible;
+	overflow-y: visible;
+	li {
+		width: 250px !important;
+		border: none !important;
+		margin: 0;
+		height: 30px !important;
+		text-transform: none;
+		padding-bottom: 8px;
+		a{
+			width: 100%;
+			padding-left: 30px;
+			margin: 0;
+			background-color: transparent !important;
+		}
+	}
+	li:hover {
+		background-color: $nav_child_hover;
+	}
 }
