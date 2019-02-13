@@ -1,9 +1,6 @@
 <nav class="${nav_css_class}" id="navigation" role="navigation">
-<h1 class="hide-accessible">
-    <@liferay.language key="navigation" />
-</h1>
 	<div class="navbar-inner">
-		<div class="nav-helpers">
+		<#--<div class="nav-helpers">
 			<ol class="nav nav-pills">
 				<li class="nav-item-sitenavigationtoggle">
 					<a href="#"><i class="icon-reorder"></i>
@@ -16,9 +13,9 @@
 					</li>
 				</#if>
 			</ol>
-		</div>
+		</div> -->
 
-		<div class="collapse nav-collapse">
+		<div class="collapse">
 			<ul aria-label="<@liferay.language key="site-pages" />" role="menubar">
 				<#list nav_items as nav_item>
 						<#assign 
@@ -34,10 +31,10 @@
 						<#assign nav_item_attr_selected="aria-selected='true'">
 						<#assign nav_item_css_class="${nav_item}_css_class selected active">
 					</#if>
-
+					<#--
 					<li class="${nav_item_css_class}" id="layout_${nav_item.getLayoutId()}" role="presentation">
 					<a aria-labelledby="layout_${nav_item.getLayoutId()}" ${nav_item_attr_has_popup} href="${nav_item.getURL()}" ${nav_item.getTarget()} role="menuitem"><span><@liferay_theme["layout-icon"] layout=nav_item_layout /> ${nav_item.getName()}</span></a>
-
+					-->
 					<#if nav_item.hasChildren()>
 						<#assign nav_item_attr_has_popup="aria-haspopup='true'">
 						<#assign nav_item_caret='<b class="icon-caret-down"></b>'>
@@ -47,7 +44,7 @@
 
 					<li class="${nav_item}_css_class" id="layout_${nav_item}.getLayoutId()" nav_item_attr_selected role="presentation">
 						<a aria-labelledby="layout_${nav_item}.getLayoutId()" nav_item_attr_has_popup class="${nav_item}_link_css_class" href="${nav_item.getURL()}" nav_item.getTarget() role="menuitem">
-							<span>${(nav_item.icon())!"icon stub"} ${nav_item.getName()} ${nav_item_caret}</span>
+							<span>${(nav_item.icon())!""} ${nav_item.getName()} ${nav_item_caret}</span>
 						</a>
 
 						<#if nav_item.hasChildren()>

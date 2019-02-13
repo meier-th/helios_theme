@@ -22,9 +22,16 @@
 <div id="header-wrapper">
 	<header id="banner" role="banner">
 		<div id="heading">
+			<h1 class="site-title">
 			<a href="/">
-				<img alt="Кафедра ВТ" src="../images/company_logo.png"/>
+				<img alt="Кафедра ВТ" src="${site_logo}"/>
 			</a>
+			<#if show_site_name>
+					<span class="site-name" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
+						${site_name}
+					</span>
+				</#if>
+			</h1>
 		</div>
 
 		<#if has_navigation || is_signed_in>
@@ -34,10 +41,6 @@
 </div>
 	<div id="content">
 	<h1 class="hide-accessible">${the_title}</h1>
-		<nav id="breadcrumbs">
-			<@liferay.breadcrumbs />
-		</nav>
-
 		<#if selectable>
 			<@liferay_util["include"] page=content_include />
 		<#else>

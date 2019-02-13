@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-    <artifactId>liferay7workspace-wars</artifactId>
-    <groupId>liferay7workspace</groupId>
+    <artifactId>liferay7-wars</artifactId>
+    <groupId>liferay7</groupId>
     <version>1.0.0</version>
   </parent>
-	<groupId>7.0theme</groupId>
-	<artifactId>7.0theme</artifactId>
+	<groupId>helios7theme</groupId>
+	<artifactId>helios7theme</artifactId>
 	<version>1.0.0</version>
 	<packaging>war</packaging>
 	<properties>
@@ -68,7 +68,7 @@
 			<plugin>
 				<groupId>com.liferay</groupId>
 				<artifactId>com.liferay.portal.tools.theme.builder</artifactId>
-				<version>1.1.5</version>
+				<version>1.1.6</version>
 				<executions>
 					<execution>
 						<phase>generate-resources</phase>

@@ -8,7 +8,7 @@
 </#if>
 
 <#assign show_dockbar = is_signed_in>
-
+<#assign site_name = "Программная инженерия">
 <#if getterUtil.getBoolean(themeDisplay.getThemeSetting("hide-dockbar"))>
 	<#assign show_dockbar = is_signed_in && permissionChecker.isGroupAdmin(group_id)>
 </#if>
