@@ -1,6 +1,6 @@
 <nav class="${nav_css_class}" id="navigation" role="navigation">
 	<div class="navbar-inner">
-		<div class="collapse">
+		<div class="navlist">
 			<ul aria-label="<@liferay.language key="site-pages" />" class="main-list" role="menubar">
 				<#list nav_items as nav_item>
 					<#assign 

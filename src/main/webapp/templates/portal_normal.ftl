@@ -12,7 +12,7 @@
 	<@liferay_util["include"] page=top_head_include />
 </head>
 
-<body class="${css_class}">
+<body class="${css_class}" onresize="checkSize()">
 
 <@liferay_ui["quick-access"] contentId="#main-content" />
 
@@ -23,7 +23,7 @@
 	<header id="banner" role="banner">
 		<div id="heading">
 			<h1 class="site-title">
-			<a href="/">
+			<a href="/" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
 				<img alt="Кафедра ВТ" src="${site_logo}"/>
 			</a>
 			<#if show_site_name>
@@ -39,6 +39,10 @@
 		</#if>
 	</header>
 </div>
+
+	<div id="mobile_nav_toggle" onclick="switchNav()">
+			<span><@liferay.language key="menu" /></span>
+	</div>
 	<div id="content">
 	<h1 class="hide-accessible">${the_title}</h1>
 		<#if selectable>

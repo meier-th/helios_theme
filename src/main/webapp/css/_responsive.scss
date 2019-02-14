@@ -1,0 +1,45 @@
+$grey_text_colour: #BBB;
+$dark_grey_background: #EEE;
+
+#mobile_nav_toggle{
+	background-color: transparent;
+	height: 34px;
+	padding: 7px 10px;
+	dispay: none;
+	margin-top: 3px;
+	right: 0;
+	top: 0;
+	text-transform: uppercase;
+	color: $grey_text_colour;
+	cursor: pointer;
+	position: fixed;
+	z-index: 1000;
+	display: none;
+	/* @media (max-width: 979px) {
+		display: block;
+	} */
+	&:hover {
+		color: white;
+		background-color: $dark_grey_background;
+	}
+	span::before {
+		content: "\2630 ";
+	}
+}
+
+#header-wrapper {
+	z-index: 1000;
+	/* @media (max-width: 979px) {
+		display: none;	
+	} */
+	@media (max-height: 450px) {
+		overflow-y: scroll;
+	}
+}
+
+#content {
+	@media (max-width: 979px) {
+		margin-left: 0 !important;
+	}
+}
+

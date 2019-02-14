@@ -93,3 +93,27 @@ AUI().ready(
 		}
 	}
 );
+
+function switchNav() {
+	var navBar = document.getElementById("header-wrapper");
+	var currentState = navBar.style.display;
+	if (currentState == "block")
+		navBar.style.display = "none";
+	else
+		navBar.style.display = "block";
+}
+
+function checkSize() {
+	var width = window.innerWidth;
+	if (width < 980) {
+		var navBar = document.getElementById("header-wrapper");
+		var toggle = document.getElementById("mobile_nav_toggle");
+		navBar.style.display = "none";
+		toggle.style.display = "block";
+	} else if (width >= 980) {
+		var navBar = document.getElementById("header-wrapper");
+		var toggle = document.getElementById("mobile_nav_toggle");
+		navBar.style.display = "block";
+		toggle.style.display = "none";
+	}
+}
