@@ -1,7 +1,7 @@
 <nav class="${nav_css_class}" id="navigation" role="navigation">
 	<div class="navbar-inner">
 		<div class="collapse">
-			<ul aria-label="<@liferay.language key="site-pages" />" role="menubar">
+			<ul aria-label="<@liferay.language key="site-pages" />" class="main-list" role="menubar">
 				<#list nav_items as nav_item>
 					<#assign 
 						nav_item_attr_selected=""
@@ -23,10 +23,7 @@
 							<#assign nav_item_css_class="${nav_item_css_class} dropdown">
 							<#assign nav_item_link_css_class="dropdown-toggle">
 						</#if>
-					<#--<li class="${nav_item}_css_class" id="layout_${nav_item}.getLayoutId()" role="presentation">
-						<a aria-labelledby="layout_${nav_item}.getLayoutId()" ${nav_item_attr_has_popup} href="${nav_item.getURL()}" ${nav_item.getTarget()} role="menuitem">
-							<span><@liferay_theme["layout-icon"] layout=nav_item_layout /> ${nav_item.getName()}</span>
-						</a> -->
+					
 					<li class="${nav_item_css_class}" id="layout_${nav_item.getLayoutId()}" role="presentation">
 						<a aria-labelledby="layout_${nav_item.getLayoutId()}" ${nav_item_attr_has_popup} href="${nav_item.getURL()}" ${nav_item.getTarget()} role="menuitem">
 							<span><@liferay_theme["layout-icon"] layout=nav_item_layout /> ${nav_item.getName()}</span>

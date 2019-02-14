@@ -1,5 +1,5 @@
 $nav_item_background: #fc1c53;
-$nav_item_text_color: #d3d3d3;
+$nav_item_text_color: #a3a3a3;
 $nav_item_text_active_color: #f8f8f8;
 $green_for_sign_in: #25C32A;
 $nav_child_hover: #F65D81;
@@ -21,11 +21,11 @@ li {
 	width: 200px;
 	margin: 0 auto;
 	border-bottom: 1px solid #888;
-	padding-top: 4px;
+	padding-top: 6px;
 	a {
 		height: 34px;
 		width: 200px;
-		padding-top: 7px;
+		padding-top: 8px;
 		color: $nav_item_text_color;
 		display: block;
 		span {
@@ -41,12 +41,16 @@ li {
 		 text-decoration: none;
 	}
 	.active {
-		color: white;
+	a {
+		color: $nav_item_text_active_color;
+	}
 	}
 }
-}
+
 .selected {
-	color: white !important;
+	a {
+		color: $nav_item_text_active_color !important;
+	}
 }
 .last_element_in_list {
 	border: none !important;
@@ -66,8 +70,8 @@ li {
 .child-element {
 	color:white !important;
 }
-.dropdown:hover {
-	margin-bottom: 300px;
+.dropdown{
+	
 }
 .dropdown-menu {
 	width: 250px;
@@ -75,13 +79,24 @@ li {
 	margin-top: 0;
 	overflow-x: visible;
 	overflow-y: visible;
+	padding: 0;
+	border-radius: 0;
+	border-width: 0;
+	
+	position: relative;
+	/*display: none; */
+	left: 0;
+	top: 0;
+	padding: 0;
+	float: none;
+	
 	li {
-		width: 250px !important;
+		width: 100% !important;
 		border: none !important;
 		margin: 0;
-		height: 30px !important;
+		height: 35px !important;
 		text-transform: none;
-		padding-bottom: 8px;
+		padding: 0 !important;
 		a{
 			width: 100%;
 			padding-left: 30px;
@@ -92,4 +107,10 @@ li {
 	li:hover {
 		background-color: $nav_child_hover;
 	}
+}
+
+.dropdown-menu:hover {
+	display:block !important;
+	margin-bottom:300px !important;
+}
 }
