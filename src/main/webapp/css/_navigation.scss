@@ -41,9 +41,7 @@ li {
 		 text-decoration: none;
 	}
 	.active {
-	a {
 		color: $nav_item_text_active_color;
-	}
 	}
 }
 
@@ -61,17 +59,30 @@ li {
 	}
 	#sign-in:hover {
 		background-color: $green_for_sign_in;
+		&:hover {
+			color: $nav_item_text_active_color !important;
+		}
 	}
 	#sign-out {
 		padding-left: 30px;
 		color: $nav_item_background;
+		&:hover {
+			color: $nav_item_text_active_color !important;
+		}
 	}
 }
 .child-element {
 	color:white !important;
 }
-.dropdown{
-	
+.dropdown {
+	&.open {
+		height: 360px;
+	}
+	a {
+		span::after {
+			content: " \2c5";
+		}
+	}
 }
 .dropdown-menu {
 	width: 250px;
@@ -109,8 +120,9 @@ li {
 	}
 }
 
-.dropdown-menu:hover {
-	display:block !important;
-	margin-bottom:300px !important;
-}
+/* .dropdown-menu:hover {
+	display: block;
+	position: relative;
+	bottom: 320px;
+} */
 }
