@@ -36,9 +36,9 @@ li {
 		}
 	}
 	a:hover {
-		 color: $nav_item_text_active_color;
-		 background-color: $nav_item_background;
-		 text-decoration: none;
+		color: $nav_item_text_active_color;
+		background-color: $nav_item_background;
+		text-decoration: none;
 	}
 	.active {
 		color: $nav_item_text_active_color;
@@ -50,12 +50,25 @@ li {
 		color: $nav_item_text_active_color !important;
 	}
 }
+
+#layout_2 {
+	a{
+		span::before {
+			content: "\2302";
+			font-size: 12pt;
+		}
+	}
+}
+
 .last_element_in_list {
 	border: none !important;
 	text-transform: uppercase;
 	#sign-in {
 		color: $green_for_sign_in;
 		padding-left: 30px;
+	}
+	#sign-in::after {
+		content: " \270E";
 	}
 	#sign-in:hover {
 		background-color: $green_for_sign_in;
@@ -80,7 +93,8 @@ li {
 	}
 	a {
 		span::after {
-			content: " \2c5";
+			content: " \25BD";
+			font-size: 9pt;
 		}
 	}
 }
