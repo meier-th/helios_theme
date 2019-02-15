@@ -1,5 +1,6 @@
 @import "navigation";
 @import "responsive";
+@import "portlet";
 
 $menu-background-colour: #303030;
 $menu-light-background-colour: #585858;
@@ -41,7 +42,7 @@ img {
 }
 #content {
 	margin-left: 220px;
-	margin-top: 40px;
+	margin-top: 0;
 	float: left;
 }
 

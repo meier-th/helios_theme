@@ -15,9 +15,9 @@ $dark_grey_background: #EEE;
 	position: fixed;
 	z-index: 1000;
 	display: none;
-	/* @media (max-width: 979px) {
+	@media (max-width: 979px) {
 		display: block;
-	} */
+	}
 	&:hover {
 		color: white;
 		background-color: $dark_grey_background;
@@ -29,9 +29,9 @@ $dark_grey_background: #EEE;
 
 #header-wrapper {
 	z-index: 1000;
-	/* @media (max-width: 979px) {
+	@media (max-width: 979px) {
 		display: none;	
-	} */
+	}
 	@media (max-height: 450px) {
 		overflow-y: scroll;
 	}
