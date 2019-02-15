@@ -1,0 +1,55 @@
+$title-colour: #E0E0E0;
+$portlet-decorate-background: #FFFEE5;
+
+.portlet-decorate {
+	.portlet {
+		margin-bottom: 24px;
+	}
+
+	.portlet-title-text {
+		color: $title-colour;
+		font-size: 16px;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+		line-height: 1.5;
+	}
+
+	.portlet-content {
+		background-color: $portlet-decorate-background;
+		border: none;
+		border-radius: 0.5rem;
+		padding: 10px;
+	}
+}
+.portlet {
+		margin-bottom: 0;
+}
+.portlet-topper-toolbar {
+	height: 50px;
+}
+.field-wrapper {
+		position: absolute;
+		right: 4px;
+		top: 2px;
+
+		a {
+			color: #FFF;
+		}
+	}
+
+	.portlet {
+		margin-bottom: 0;
+
+		&:hover {
+			z-index: 1034;
+		}
+	}
+	
+#p_p_id_com_liferay_login_web_portlet_LoginPortlet_ {
+	width: 100%;
+}	
+
+.portlet-icon-back {
+	width: 200px;
+}
+	
