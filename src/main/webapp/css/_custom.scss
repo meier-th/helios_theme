@@ -45,7 +45,21 @@ img {
 	width: 100%;
 }
 
-.control-menu-level-1-nav.control-menu-nav {
-	width: 80%;
+.control-menu-nav-category.user-control-group {
+	@media (max-width: 980px) {
+		margin-right: 85px;
+	}
+}
+.control-menu-nav-category.sites-control-group {
+	position: absolute;
+	left: 260px;
+	z-index: 2000;
 }
 
+#_com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet_sovq__null__null {
+	visibility: hidden;
+}
+
+/* .control-menu-icon.lfr-portal-tooltip.product-menu-toggle.sidenav-toggler.active.open {
+	margin-left: 280px;
+} */
