@@ -21,11 +21,8 @@ $portlet-decorate-background: #FFFEE5;
 		padding: 10px;
 	}
 }
-.portlet {
-		margin-bottom: 0;
-}
-.portlet-topper-toolbar {
-	height: 50px;
+.portlet-topper {
+	height: 30px;
 }
 .field-wrapper {
 		position: absolute;
@@ -39,17 +36,32 @@ $portlet-decorate-background: #FFFEE5;
 
 	.portlet {
 		margin-bottom: 0;
-
-		&:hover {
-			z-index: 1034;
-		}
+		margin-left: 40px;
 	}
 	
 #p_p_id_com_liferay_login_web_portlet_LoginPortlet_ {
 	width: 100%;
+	margin-top: 80px;
 }	
 
 .portlet-icon-back {
 	width: 200px;
+}
+.portlet-options {
+	width: 40px;
+	float: right;
+}
+.portlet-title-default {
+	display: inline;
+}
+.portlet-topper-toolbar {
+	display: inline;
+}
+.dropdown.lfr-icon-menu.portlet-options {
+	float: right;
+	width: 40px;
+}
+.portlet-layout.row {
+	width: 100%;
 }
 	

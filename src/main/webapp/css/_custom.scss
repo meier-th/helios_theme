@@ -1,3 +1,5 @@
+@import "responsive";
+
 $menu-background-colour: #303030;
 $menu-light-background-colour: #585858;
 
@@ -28,7 +30,7 @@ $menu-light-background-colour: #585858;
 }
 
 #ControlMenu {
-	/* position: fixed; */
+	position: inherit;
 	display: block;
 }
 
@@ -37,8 +39,13 @@ img {
 	margin: auto;
 }
 #content {
-	margin-left: 260px;
-	margin-top: 40px;
+	padding-left: 220px;
+	margin-top: 0;
 	float: left;
+	width: 100%;
+}
+
+.control-menu-level-1-nav.control-menu-nav {
+	width: 80%;
 }
 

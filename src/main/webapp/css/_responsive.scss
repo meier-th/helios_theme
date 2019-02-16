@@ -47,7 +47,6 @@ $dark_grey_background: #EEE;
 
 #content {
 	@media (max-width: 979px) {
-		margin-left: 0 !important;
+		padding-left: 40px !important;
 	}
 }
-

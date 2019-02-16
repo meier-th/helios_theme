@@ -51,7 +51,7 @@ li {
 	}
 }
 
-#layout_2 {
+.main-list > :first-child {
 	a{
 		span::before {
 			content: "\2302";
@@ -89,7 +89,7 @@ li {
 }
 .dropdown {
 	&.open {
-		height: 360px;
+		height: 395px;
 	}
 	a {
 		span::after {
@@ -99,7 +99,7 @@ li {
 	}
 }
 .dropdown-menu {
-	width: 250px;
+	min-width: 160px;
 	background-color: $nav_item_background;
 	margin-top: 0;
 	overflow-x: visible;
@@ -133,9 +133,4 @@ li {
 		background-color: $nav_child_hover;
 	}
 }
-/* .dropdown-menu:hover {
-	display: block;
-	position: relative;
-	bottom: 320px;
-} */
 }
