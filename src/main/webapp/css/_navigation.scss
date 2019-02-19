@@ -1,8 +1,9 @@
-$nav_item_background: #fc1c53;
-$nav_item_text_color: #a3a3a3;
-$nav_item_text_active_color: #f8f8f8;
-$green_for_sign_in: #25C32A;
-$nav_child_hover: #F65D81;
+$nav_item_background: #f41c52;
+$nav_item_text_color: #BBB;
+$nav_item_text_active_color: #EEE;
+$green_sign_in_text: #7fc282;
+$green_sign_in_hover: #5cb260;
+$nav_child_hover: #f14872;
 
 #navigation {
 	height: 295px;
@@ -54,8 +55,8 @@ li {
 .main-list > :first-child {
 	a{
 		span::before {
-			content: "\2302";
-			font-size: 12pt;
+			content: "\f015";
+    		font-family: 'fontawesome-alloy';
 		}
 	}
 }
@@ -64,23 +65,27 @@ li {
 	border: none !important;
 	text-transform: uppercase;
 	#sign-in {
-		color: $green_for_sign_in;
+		color: $green_sign_in_text;
 		padding-left: 30px;
-	}
-	#sign-in::after {
-		content: " \270E";
-	}
-	#sign-in:hover {
-		background-color: $green_for_sign_in;
 		&:hover {
+			background-color: $green_sign_in_hover;
 			color: $nav_item_text_active_color !important;
 		}
+		&::after {
+			content: " \f090";
+    		font-family: 'fontawesome-alloy';
+		}
 	}
+
 	#sign-out {
 		padding-left: 30px;
 		color: $nav_item_background;
 		&:hover {
 			color: $nav_item_text_active_color !important;
+		}
+		&::after {
+			content: " \f08b";
+			font-family: 'fontawesome-alloy';
 		}
 	}
 }
@@ -96,8 +101,8 @@ li {
 	}
 	a {
 		span::after {
-			content: " \25BD";
-			font-size: 9pt;
+			content: " \f0d7";
+			font-family: 'fontawesome-alloy';
 		}
 	}
 }

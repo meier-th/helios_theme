@@ -20,6 +20,7 @@
 
 	<@liferay.control_menu />
 <div id="header-wrapper">
+	<div id = "header_stub"> </div>
 	<header id="banner" role="banner">
 		<div id="heading">
 			<h1 class="site-title">

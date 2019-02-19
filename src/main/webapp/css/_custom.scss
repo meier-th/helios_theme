@@ -1,7 +1,9 @@
 @import "responsive";
+@import "input";
 
-$menu-background-colour: #303030;
-$menu-light-background-colour: #585858;
+$menu-background-colour: #333;
+$menu-light-background-colour: #4d4d4d;
+$topper-colour: #ececed;
 
 #header-wrapper {
 	height: 100%;
@@ -9,13 +11,18 @@ $menu-light-background-colour: #585858;
 	position: fixed;
 	width: 220px;
 	float: left;
+	#header_stub {
+		height: 36px;
+		width: 100%;
+		background-color: $topper-colour;
+	}
 	#banner {
 		height: 100%;
 		#heading {
 			height: 189px;
 			background-color: $menu-light-background-colour;
 			width: 100%;
-			margin-top: 40px;
+			/* margin-top: 40px; */
 			padding-top: 30px;
 			h1 {
 				width: 120px;
