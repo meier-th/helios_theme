@@ -23,6 +23,30 @@ $portlet-decorate-background: #FFFEE5;
 }
 .portlet-topper {
 	height: 30px;
+	position: absolute;
+    right: 0px;
+    top: 3px;
+    background-image: linear-gradient(to bottom, #ececec, #cbcbcb);
+    border-radius: 7px;
+    font-weight: bold;
+    color: #333;
+    padding-left: 7px;
+    display: none;
+    z-index: 1010;
+    @media (max-width: 980px) {
+    	display: block;
+    }
+    .lexicon-icon.lexicon-icon-ellipsis-v {
+    	height: 30px;
+    }
+    .portlet-title-default {
+    	padding-top: 5px;
+    	height: 100%;
+    	float: left;
+    }
+    .dropdown.lfr-icon-menu.portlet-options {
+    	height: 30px;
+    }
 }
 .field-wrapper {
 		position: absolute;
@@ -37,6 +61,12 @@ $portlet-decorate-background: #FFFEE5;
 	.portlet {
 		margin-bottom: 0;
 		margin-left: 40px;
+		position: relative;
+		&:hover {
+			.portlet-topper {
+				display: block;
+			}
+		}
 	}
 	
 #p_p_id_com_liferay_login_web_portlet_LoginPortlet_ {
