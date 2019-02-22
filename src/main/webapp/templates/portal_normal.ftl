@@ -19,6 +19,7 @@
 <@liferay_util["include"] page=body_top_include />
 
 	<@liferay.control_menu />
+	<div id="page">
 <div id="header-wrapper">
 	<div id = "header_stub"> </div>
 	<header id="banner" role="banner">
@@ -57,6 +58,7 @@
 				<@liferay_util["include"] page=content_include /> 
 			</@>
 		</#if>
+	</div>
 	</div>
 <@liferay_util["include"] page=body_bottom_include />
 

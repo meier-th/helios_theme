@@ -37,8 +37,9 @@ $topper-colour: #ececed;
 }
 
 #ControlMenu {
-	position: inherit;
+	position: fixed;
 	display: block;
+	background-color: #333;
 }
 
 img {
@@ -67,6 +68,16 @@ img {
 	visibility: hidden;
 }
 
-/* .control-menu-icon.lfr-portal-tooltip.product-menu-toggle.sidenav-toggler.active.open {
-	margin-left: 280px;
-} */
+#ControlMenu + #page {
+	margin-top: 64px;
+	@media (max-width: 767px) {
+		margin-top: 48px;
+	}
+}
+.sidebar-header {
+	background-color: #4d4d4d !important;
+}
+
+.product-menu.sidebar.sidenav-menu {
+	background-color: #333;
+}
