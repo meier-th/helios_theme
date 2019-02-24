@@ -22,8 +22,11 @@ $topper-colour: #ececed;
 			height: 189px;
 			background-color: $menu-light-background-colour;
 			width: 100%;
-			/* margin-top: 40px; */
 			padding-top: 30px;
+			img {
+				width: 120px;
+				margin: auto;
+			}
 			h1 {
 				width: 120px;
 				margin: 0 auto;
@@ -42,10 +45,7 @@ $topper-colour: #ececed;
 	background-color: #333;
 }
 
-img {
-	width: 120px;
-	margin: auto;
-}
+
 #content {
 	padding-left: 220px;
 	margin-top: 0;
