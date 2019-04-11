@@ -26,14 +26,14 @@ $portlet-decorate-background: #FFFEE5;
   height: 30px;
   position: absolute;
   right: 0px;
-  top: 3px;
+  top: -28px;
   background-image: linear-gradient(to bottom, #ececec, #cbcbcb);
   border-radius: 7px;
   font-weight: bold;
   color: #333;
   padding-left: 7px;
   display: none;
-  z-index: 1010;
+  z-index: 2050;
   @media (max-width: 980px) {
     display: block;
   }
@@ -187,4 +187,3 @@ $portlet-decorate-background: #FFFEE5;
 .portlet-layout.row {
   width: 100%;
 }
-	
