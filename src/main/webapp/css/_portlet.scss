@@ -187,3 +187,12 @@ $portlet-decorate-background: #FFFEE5;
 .portlet-layout.row {
   width: 100%;
 }
+
+.portlet-boundary_com_liferay_document_library_web_portlet_DLPortlet_ {
+  .document-library-breadcrumb {
+    margin-bottom: 20px;
+    ul {
+      padding-left: 8px;
+    }
+  }
+}
