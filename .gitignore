@@ -4,4 +4,8 @@ build/
 target/
 .mvn
 .classpath
-.settings
+.settings/
+.mvn/
+.mvn/wrapper/
+*.iml
+.idea/
