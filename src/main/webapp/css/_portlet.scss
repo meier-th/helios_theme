@@ -64,7 +64,9 @@ $portlet-decorate-background: #FFFEE5;
   position: absolute;
   right: 4px;
   top: 2px;
-
+  &.lfr-ddm-field-group {
+    position: relative;
+  }
   a {
     color: #FFF;
   }
